@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title></title>
+
+<link href="css/demo.css" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" href="css/slideshows.css" />
+<link rel="stylesheet" href="css/buttons.css" />
+<script src="js/jquery.min.js"></script>
+
+<script src="js/jquery.cycle.all.js"></script>
+<script src="js/jquery.easing.1.3.js"></script>
+<style>
+	.has-js{
+		position : fixed;
+		left :1px;
+		top : 375px;
+	}
+	#parent{
+		padding-left:12px;
+		padding-top:6px;
+		margin-right : 10px;
+		float: left;
+		margin: auto auto auto auto; 
+	}
+	#parent1{
+		width:400px;
+		line-height: 1.4em;
+		margin-right : 10px;
+		float: left;
+		margin-left:50px;
+		margin-top:10px;
+	}
+</style>
+</head>
+
+<body>
+<div id ="mymain">
+<section id="main">
+
+	<div id="content">
+		
+		<div class="ss2_wrapper">
+		<div id="example">
+			<a href="#" class="slideshow_prev"><span>Previous</span></a>
+			<a href="#" class="slideshow_next"><span>Next</span></a>
+				
+			<div class="slideshow_paging"></div>
+			
+			<div class="slideshow_box">
+
+				<div class="data"></div>
+			</div>
+			
+			<div id="slideshow_2" class="slideshow">
+				
+				<div class="slideshow_item">
+					<div class="image"><a href="#"><img src="photos/Big-Bang-Theory-The.jpg" alt="photo 2" width="570" height="300" /></a></div>
+					<div class="data">
+						<h4><a href="#">Big Bang Theory</a></h4>
+						<p>When beauty meets the brains.</p>
+					</div>
+				</div>
+								
+				<div class="slideshow_item">
+					<div class="image"><a href="#"><img src="photos/castle.png" alt="photo 3" width="570" height="300" /></a></div>
+					<div class="data">
+						<h4><a href="#">Castle</a></h4>
+						<p>Solving murder has never been so much fun.</p>
+					</div>
+
+				</div>
+				
+				<div class="slideshow_item">
+					<div class="image"><a href="#"><img src="photos/doctorwho.jpg" alt="photo 1" width="570" height="300" /></a></div>
+					<div class="data">
+						<h4><a href="#">Doctor Who</a></h4>
+						<p>Trust Your Doctor.</p>
+					</div>
+				</div>
+
+				
+				<div class="slideshow_item">
+					<div class="image"><a href="#"><img src="photos/drhouse.jpg" alt="photo 4" width="570" height="300" /></a></div>
+					<div class="data">
+						<h4><a href="#">House M.D.</a></h4>
+						<p>Genius has side effects.</p>
+					</div>
+				</div>
+				
+				<div class="slideshow_item">
+					<div class="image"><a href="#"><img src="photos/Friends.jpg" alt="photo 5" width="570" height="300" /></a></div>
+					<div class="data">
+						<h4><a href="#">Friends</a></h4>
+						<p>You can never have enough Friends!</p>
+					</div>
+				</div>
+				
+				<div class="slideshow_item">
+					<div class="image"><a href="#"><img src="photos/himym.png" alt="photo 6" width="570" height="300" /></a></div>
+					<div class="data">
+						<h4><a href="#">How I Met Your Mother</a></h4>
+						<p>A love story in reverse.</p>
+					</div>
+				</div>
+				
+				<div class="slideshow_item">
+					<div class="image"><a href="#"><img src="photos/supernatural.png" alt="photo 7" width="570" height="300" /></a></div>
+					<div class="data">
+						<h4><a href="#">Supernatural</a></h4>
+						<p>Scary Just Got Sexy.</p>
+					</div>
+				</div>				
+			</div>
+			
+		</div>
+		</div><img src="photos/example-frame - Copy (4).png" alt="Example Frame" id="frame"><!-- .ss2_wrapper -->
+	
+	</div>
+	
+</section>
+			<div id="parent">
+				<div id="poster">
+				</div>
+			</div>
+			
+			<div id="parent1">
+				<div id="title">
+				</div>
+				<div id="realeaseDate">
+				</div>
+				<div id="genre">
+				</div>
+				<div id="rating">
+				</div>
+				<div id="seasons">
+				</div>
+				<div id ="cast">
+				</div>
+				<div id="air">
+				</div>
+				<div id="latest">
+				</div>
+				<div id="next">
+				</div>
+				<div id="link">
+				</div>
+			</div>
+</div>
+<div class="has-js">
+<DIV id="sizer">
+    <FORM action="#" method="get" accept-charset="utf-8">
+	Choose Your Category:
+        <FIELDSET class="radios">
+            <LABEL class="label_radio r_on" for="radio-01"><INPUT name="sample-radio" id="radio-01" value="1" type="radio" checked=""> Serial Name</input></LABEL>
+            <LABEL class="label_radio" for="radio-02"><INPUT name="sample-radio" id="radio-02" value="2" type="radio"> Serial Name and Year</input></LABEL>
+            <LABEL class="label_radio" for="radio-03"><INPUT name="sample-radio" id="radio-03" value="3" type="radio"> Particular Season or Episode </input></LABEL>
+        </FIELDSET>
+    </FORM>
+</DIV>
+<div id="sizer2">
+	<form class="form-wrapper cf">
+		<input type="text" id="S_Name1" placeholder="Serial Name..." required>
+		<button type="button" id="tBut1">Search</button>
+	</form>
+</div>
+<div id="sizer3">
+	<form class="form-wrapper1 cf">
+		<input type="text" id="S_Name2" placeholder="Serial Name..." required>
+		<input type="text" id="S_Year2" placeholder="Serial Year..." required>
+		<button type="button" id="tBut2">Search</button>
+	</form>
+</div>
+<div id="sizer4">
+	<form class="form-wrapper2 cf">
+		<input type="text" id="S_Name3" placeholder="Serial Name..." required>
+		<input type="text" id="S_Year3" placeholder="Serial Year...(Optional)" required>
+		<input type="text" id="S_Season3" placeholder="Season Number..." required>
+		<input type="text" id="S_Episode3" placeholder="Episode Number..." required>
+		<button type="button" id="tBut3">Search</button>
+	</form>
+</div>
+			<div id="error">
+				</div>
+</div>
+
+</body>
+<script src="js/jquery1.js"></script>
+<script src="js/jquery2.js"></script>
+<script src="js/jquery3.js"></script>
+<script src="js/jquery.code.js"></script>
+</html>
